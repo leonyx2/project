@@ -34,10 +34,12 @@ for (let i = 0; i < 2; i++) {
 
 if (personalMovieDB.count < 10) {
     console.log("Просмотрено довольно мало филььмов");
-} else if (personalMovieDB.count > 10 && personalMovieDB.count < 30) {
+} else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
     console.log("Вы клссичесыкий зритель");
-} else {
+} else if (personalMovieDB.count >= 30) {
     console.log("Вы киноман");
+} else {
+    console.log("Error");
 }
 
 console.log(personalMovieDB);
